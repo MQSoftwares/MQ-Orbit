@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60" fill="none">
+  <defs>
+    <linearGradient id="bgLight" x1="8" y1="8" x2="112" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EAFBFC"/>
+      <stop offset="100%" stop-color="#D7F3F5"/>
+    </linearGradient>
+    <linearGradient id="knobSun" x1="76" y1="16" x2="104" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#69CDD2"/>
+      <stop offset="100%" stop-color="#18A7A6"/>
+    </linearGradient>
+    <linearGradient id="sunCore" x1="84" y1="24" x2="96" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DDF8FB" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="shadowLight" x="0" y="0" width="120" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.2" flood-color="#0F487A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowLight)">
+    <rect x="5" y="8" width="110" height="44" rx="22" fill="url(#bgLight)"/>
+    <ellipse cx="26" cy="39" rx="16" ry="8" fill="#FFFFFF" opacity="0.58"/>
+    <ellipse cx="41" cy="36" rx="13" ry="7" fill="#FFFFFF" opacity="0.44"/>
+    <ellipse cx="55" cy="39" rx="14" ry="7" fill="#FFFFFF" opacity="0.32"/>
+    <ellipse cx="71" cy="38" rx="11" ry="6" fill="#FFFFFF" opacity="0.24"/>
+    <circle cx="90" cy="30" r="16" fill="url(#knobSun)"/>
+    <circle cx="90" cy="30" r="6.5" fill="url(#sunCore)" opacity="0.95"/>
+    <path d="M90 19V22" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M90 38V41" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M79 30H82" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M98 30H101" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M82.4 22.4L84.6 24.6" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M95.4 35.4L97.6 37.6" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M97.6 22.4L95.4 24.6" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M84.6 35.4L82.4 37.6" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.3" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60" fill="none">
+  <defs>
+    <linearGradient id="bgLight" x1="8" y1="8" x2="112" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EAFBFC"/>
+      <stop offset="100%" stop-color="#D7F3F5"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="77" y1="17" x2="103" y2="43" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#69CDD2"/>
+      <stop offset="100%" stop-color="#18A7A6"/>
+    </linearGradient>
+    <filter id="shadowSoft" x="0" y="0" width="120" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.2" flood-color="#0F487A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowSoft)">
+    <rect x="5" y="8" width="110" height="44" rx="22" fill="url(#bgLight)"/>
+    <ellipse cx="27" cy="39" rx="18" ry="8" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="43" cy="36" rx="14" ry="7" fill="#FFFFFF" opacity="0.48"/>
+    <ellipse cx="58" cy="40" rx="16" ry="8" fill="#FFFFFF" opacity="0.35"/>
+    <ellipse cx="75" cy="38" rx="12" ry="6" fill="#FFFFFF" opacity="0.28"/>
+    <circle cx="90" cy="30" r="15" fill="url(#sunGrad)"/>
+    <circle cx="86" cy="25" r="5" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+</svg>

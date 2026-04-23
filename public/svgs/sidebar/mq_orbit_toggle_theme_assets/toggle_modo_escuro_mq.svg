@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60" fill="none">
+  <defs>
+    <linearGradient id="bgDark" x1="6" y1="10" x2="114" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F487A"/>
+      <stop offset="62%" stop-color="#335EAE"/>
+      <stop offset="100%" stop-color="#18A7A6"/>
+    </linearGradient>
+    <radialGradient id="knobMoon" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 29) rotate(50) scale(22 22)">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DDEBF2"/>
+    </radialGradient>
+    <filter id="shadowDark" x="0" y="0" width="120" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.2" flood-color="#08233F" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowDark)">
+    <rect x="5" y="8" width="110" height="44" rx="22" fill="url(#bgDark)"/>
+
+    <circle cx="67" cy="18" r="0.9" fill="#FFFFFF" opacity="0.26"/>
+    <circle cx="78" cy="24" r="1.1" fill="#FFFFFF" opacity="0.28"/>
+    <circle cx="94" cy="18" r="0.95" fill="#FFFFFF" opacity="0.24"/>
+    <circle cx="84" cy="35" r="0.85" fill="#FFFFFF" opacity="0.22"/>
+    <circle cx="103" cy="28" r="0.9" fill="#FFFFFF" opacity="0.20"/>
+    <path d="M56 40C61 34 70 33 77 37" stroke="#FFFFFF" opacity="0.10" stroke-width="2.2" stroke-linecap="round"/>
+
+    <circle cx="30" cy="30" r="16" fill="url(#knobMoon)"/>
+
+    <!-- refined moon icon inside the knob -->
+    <circle cx="30.5" cy="30" r="7.8" fill="#0F487A"/>
+    <circle cx="34.8" cy="27.8" r="7.8" fill="url(#knobMoon)"/>
+    <path d="M37.9 20.8V24" stroke="#18A7A6" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M36.3 22.4H39.5" stroke="#18A7A6" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M22.3 24.2V26" stroke="#0F487A" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+    <path d="M21.4 25.1H23.2" stroke="#0F487A" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+  </g>
+</svg>

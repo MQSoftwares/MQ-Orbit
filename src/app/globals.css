@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --surface: 0 0% 100%;
+  --surface-2: 210 40% 96%;
+  --panel: 210 38% 96%;
+  --panel-surface: 0 0% 100%;
+  --panel-surface-muted: 210 34% 94%;
+  --panel-border: 214 28% 86%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --border: 214 32% 91%;
+  --accent: 184 72% 43%;
+  --accent-foreground: 222 47% 11%;
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 222 47% 11%;
+  --sidebar-muted: 215 16% 47%;
+  --sidebar-border: 214 32% 91%;
+  --sidebar-active: 210 40% 96%;
+  --sidebar-active-border: 214 32% 91%;
+  --app-bg: radial-gradient(circle at top, rgba(14, 165, 233, 0.09), transparent 35%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  --scrollbar-track: 214 28% 92%;
+  --scrollbar-thumb: 184 72% 43%;
+  --scrollbar-thumb-hover: 184 72% 35%;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --surface: 220 42% 15%;
+  --surface-2: 219 40% 18%;
+  --panel: 220 42% 15%;
+  --panel-surface: 219 38% 17%;
+  --panel-surface-muted: 220 34% 19%;
+  --panel-border: 215 25% 28%;
+  --muted: 219 35% 20%;
+  --muted-foreground: 215 20% 70%;
+  --border: 215 25% 26%;
+  --accent: 184 70% 50%;
+  --accent-foreground: 222 47% 11%;
+  --sidebar: 220 47% 12%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-muted: 215 20% 70%;
+  --sidebar-border: 215 25% 26%;
+  --sidebar-active: 219 40% 18%;
+  --sidebar-active-border: 215 25% 26%;
+  --app-bg: radial-gradient(circle at top, rgba(34, 211, 238, 0.08), transparent 35%),
+    linear-gradient(180deg, #071a2b 0%, #0b1220 100%);
+  --scrollbar-track: 217 30% 17%;
+  --scrollbar-thumb: 184 70% 50%;
+  --scrollbar-thumb-hover: 184 70% 58%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--scrollbar-thumb) / 0.7) transparent;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image: var(--app-bg);
+  background-attachment: fixed;
+  scrollbar-gutter: stable;
+}
+
+html.theme-transitioning body,
+html.theme-transitioning body *,
+html.theme-transitioning body *::before,
+html.theme-transitioning body *::after {
+  transition-property: background-color, color, border-color, box-shadow, fill, stroke, opacity, transform, filter;
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.theme-transitioning body {
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform, filter;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--scrollbar-thumb) / 0.7) transparent;
+}
+
+a {
+  @apply text-inherit no-underline;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-button:single-button,
+*::-webkit-scrollbar-button:start,
+*::-webkit-scrollbar-button:end,
+*::-webkit-scrollbar-button:vertical:decrement,
+*::-webkit-scrollbar-button:vertical:increment,
+*::-webkit-scrollbar-button:horizontal:decrement,
+*::-webkit-scrollbar-button:horizontal:increment {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--scrollbar-thumb) / 0.55) 0%,
+    hsl(var(--scrollbar-thumb-hover) / 0.8) 100%
+  );
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--scrollbar-thumb) / 0.75) 0%,
+    hsl(var(--scrollbar-thumb-hover) / 0.95) 100%
+  );
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
