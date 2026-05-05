@@ -63,13 +63,32 @@ html {
   scrollbar-gutter: stable;
   scrollbar-width: thin;
   scrollbar-color: hsl(var(--scrollbar-thumb) / 0.7) transparent;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   @apply bg-background text-foreground antialiased;
+  min-height: 100dvh;
   background-image: var(--app-bg);
   background-attachment: fixed;
   scrollbar-gutter: stable;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar-content {
+    padding-left: 18rem;
+    transition: padding-left 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html.sidebar-collapsed .sidebar-content {
+    padding-left: 1.5rem;
+  }
 }
 
 html.theme-transitioning body,

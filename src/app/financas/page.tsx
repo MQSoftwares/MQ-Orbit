@@ -1,5 +1,5 @@
-import { BlankRoutePage } from "@/components/blank-route-page";
+import { FinancasOverviewPage } from "@/components/mq-orbit/financas";
 
 export default function FinancasPage() {
-  return <BlankRoutePage title="Finanças" />;
+  return <FinancasOverviewPage />;
 }

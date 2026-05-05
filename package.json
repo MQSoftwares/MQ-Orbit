@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev -p 3100 -H 0.0.0.0",
+    "dev:docker": "docker compose -f docker.dev.yaml up --build",
+    "dev:docker:down": "docker compose -f docker.dev.yaml down",
     "build": "next build",
     "start": "next start -p 3100 -H 0.0.0.0",
     "test": "vitest run",

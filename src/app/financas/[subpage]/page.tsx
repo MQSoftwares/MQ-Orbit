@@ -1,15 +1,5 @@
-import { SectionPlaceholderPage } from "@/components/section-placeholder-page";
+import { notFound } from "next/navigation";
 
-type FinancasSubpagePageProps = {
-  params: Promise<{
-    subpage: string;
-  }>;
-};
-
-export default async function FinancasSubpagePage({
-  params,
-}: FinancasSubpagePageProps) {
-  const { subpage } = await params;
-
-  return <SectionPlaceholderPage subpage={subpage} />;
+export default function FinancasSubpagePage() {
+  notFound();
 }

@@ -20,6 +20,8 @@ type AgendaItem = {
   kanbanColumn?: string;
 };
 
+const agendaTimeZone = "America/Sao_Paulo";
+
 const todayItems: AgendaItem[] = [
   {
     id: "today-1",
@@ -143,14 +145,16 @@ function formatDateTime(value: string) {
     month: "short",
     hour: "2-digit",
     minute: "2-digit",
-  }).format(new Date(value));
+    timeZone: agendaTimeZone,
+  }).format(parseAgendaDate(value));
 }
 
 function formatTime(value: string) {
   return new Intl.DateTimeFormat("pt-BR", {
     hour: "2-digit",
     minute: "2-digit",
-  }).format(new Date(value));
+    timeZone: agendaTimeZone,
+  }).format(parseAgendaDate(value));
 }
 
 function formatToday() {
@@ -158,7 +162,12 @@ function formatToday() {
     weekday: "long",
     day: "2-digit",
     month: "long",
+    timeZone: agendaTimeZone,
   }).format(new Date());
+}
+
+function parseAgendaDate(value: string) {
+  return new Date(`${value}-03:00`);
 }
 
 function EmptyState({ title, description }: { title: string; description: string }) {

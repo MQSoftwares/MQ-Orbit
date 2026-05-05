@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+  <defs>
+    <linearGradient id="mqGrad" x1="6" y1="6" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F487A"/>
+      <stop offset="55%" stop-color="#18A7A6"/>
+      <stop offset="100%" stop-color="#69CDD2"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="30" cy="21" r="6.5" stroke="url(#mqGrad)" stroke-width="3.4"/>
+  <path d="M19 43C19 37.48 23.48 33 29 33H31C36.52 33 41 37.48 41 43" stroke="url(#mqGrad)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="18" cy="24" r="4.5" stroke="url(#mqGrad)" stroke-width="3"/>
+  <path d="M11.5 41C11.5 37.41 14.41 34.5 18 34.5" stroke="url(#mqGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="42" cy="24" r="4.5" stroke="url(#mqGrad)" stroke-width="3"/>
+  <path d="M48.5 41C48.5 37.41 45.59 34.5 42 34.5" stroke="url(#mqGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M24.5 14.5L21.5 11.5" stroke="url(#mqGrad)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M21.5 14.5L24.5 11.5" stroke="url(#mqGrad)" stroke-width="2.8" stroke-linecap="round"/>
+</svg>

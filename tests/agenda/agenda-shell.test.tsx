@@ -5,7 +5,7 @@ import {
   AgendaOverviewPage,
   AgendaTodayPanel,
   AgendaUpcomingList,
-} from "./agenda-shell";
+} from "@/components/agenda/agenda-shell";
 
 describe("AgendaOverviewPage", () => {
   it("renders the agenda title", () => {

@@ -1,5 +1,5 @@
-import { BlankRoutePage } from "@/components/blank-route-page";
+import { DesignOverviewPage } from "@/components/mq-orbit/design";
 
 export default function DesignPage() {
-  return <BlankRoutePage title="Design" />;
+  return <DesignOverviewPage />;
 }

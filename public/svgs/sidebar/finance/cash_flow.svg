@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+
+  <defs>
+    <linearGradient id="mqGrad" x1="6" y1="6" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F487A"/>
+      <stop offset="55%" stop-color="#18A7A6"/>
+      <stop offset="100%" stop-color="#69CDD2"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M12 45H48" stroke="url(#mqGrad)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 38L24 30L30 34L42 20" stroke="url(#mqGrad)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 20H42V24" stroke="url(#mqGrad)" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="15" y="28" width="5" height="17" rx="2" stroke="url(#mqGrad)" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="27.5" y="24" width="5" height="21" rx="2" stroke="url(#mqGrad)" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="40" y="16" width="5" height="29" rx="2" stroke="url(#mqGrad)" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

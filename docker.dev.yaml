@@ -1,8 +1,10 @@
 services:
   mqorbit:
+    container_name: mqorbit-dev
     build:
       context: .
       dockerfile: Dockerfile.dev
+    command: sh -c "rm -rf .next-codex && npm run dev"
     ports:
       - "3100:3100"
     volumes:
@@ -11,3 +13,5 @@ services:
     environment:
       NODE_ENV: development
       PORT: "3100"
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"

@@ -10,7 +10,7 @@ const defaultValidSubpages = new Set([
 ]);
 
 const sectionValidSubpages = {
-  agenda: new Set(["calendario", "compromissos", "lembretes"]),
+  agenda: new Set(["calendario", "compromissos"]),
 } satisfies Record<string, Set<string>>;
 
 type SectionPlaceholderPageProps = {

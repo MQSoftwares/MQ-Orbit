@@ -25,6 +25,45 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function applyTheme(theme: Theme) {
   document.documentElement.classList.toggle("dark", theme === "dark");
+  document.documentElement.dataset.theme = theme;
+}
+
+function getThemeFromDocument(): Theme | null {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
+  const documentTheme = document.documentElement.dataset.theme;
+
+  if (documentTheme === "light" || documentTheme === "dark") {
+    return documentTheme;
+  }
+
+  return null;
+}
+
+function getInitialTheme(): Theme {
+  const documentTheme = getThemeFromDocument();
+
+  if (documentTheme) {
+    return documentTheme;
+  }
+
+  if (typeof window === "undefined") {
+    return "light";
+  }
+
+  try {
+    const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+
+    if (storedTheme === "light" || storedTheme === "dark") {
+      return storedTheme;
+    }
+  } catch {
+    // Ignore storage access failures and fall back to light.
+  }
+
+  return "light";
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
@@ -34,25 +73,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     null,
   );
   const [transitionVisible, setTransitionVisible] = useState(false);
-  const [theme, setThemeState] = useState<Theme>(() => {
-    if (typeof window === "undefined") {
-      return "light";
-    }
-
-    try {
-      const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
-
-      if (storedTheme === "light" || storedTheme === "dark") {
-        return storedTheme;
-      }
-    } catch {
-      // Ignore storage access failures and fall back to the document class.
-    }
-
-    return document.documentElement.classList.contains("dark")
-      ? "dark"
-      : "light";
-  });
+  const [theme, setThemeState] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
     return () => {

@@ -18,6 +18,7 @@ export function BrandLogo({ className }: BrandLogoProps) {
       alt="MQOrbit"
       className={["block", className].filter(Boolean).join(" ")}
       src={src}
+      suppressHydrationWarning
     />
   );
 }

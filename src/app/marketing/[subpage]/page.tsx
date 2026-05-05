@@ -1,15 +1,5 @@
-import { SectionPlaceholderPage } from "@/components/section-placeholder-page";
+import { notFound } from "next/navigation";
 
-type MarketingSubpagePageProps = {
-  params: Promise<{
-    subpage: string;
-  }>;
-};
-
-export default async function MarketingSubpagePage({
-  params,
-}: MarketingSubpagePageProps) {
-  const { subpage } = await params;
-
-  return <SectionPlaceholderPage subpage={subpage} />;
+export default function MarketingSubpagePage() {
+  notFound();
 }

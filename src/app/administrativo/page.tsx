@@ -1,5 +1,5 @@
-import { BlankRoutePage } from "@/components/blank-route-page";
+import { AdministrativoOverviewPage } from "@/components/mq-orbit/administrativo";
 
 export default function AdministrativoPage() {
-  return <BlankRoutePage title="Administrativo" />;
+  return <AdministrativoOverviewPage />;
 }

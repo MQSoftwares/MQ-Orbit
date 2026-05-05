@@ -1,5 +1,5 @@
-import { BlankRoutePage } from "@/components/blank-route-page";
+import { KanbanOverviewPage } from "@/components/mq-orbit/kanban";
 
 export default function KanbanPage() {
-  return <BlankRoutePage title="Kanban" />;
+  return <KanbanOverviewPage />;
 }

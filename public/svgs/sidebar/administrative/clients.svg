@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+
+  <defs>
+    <linearGradient id="mqGrad" x1="6" y1="6" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F487A"/>
+      <stop offset="55%" stop-color="#18A7A6"/>
+      <stop offset="100%" stop-color="#69CDD2"/>
+    </linearGradient>
+  </defs>
+
+
+  <circle cx="30" cy="22" r="7" stroke="url(#mqGrad)" stroke-width="3.5"/>
+  <path d="M18 43C18 36.4 23.4 31 30 31C36.6 31 42 36.4 42 43" stroke="url(#mqGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M14 20H17" stroke="url(#mqGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M43 20H46" stroke="url(#mqGrad)" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

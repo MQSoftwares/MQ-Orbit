@@ -1,5 +1,5 @@
-import { BlankRoutePage } from "@/components/blank-route-page";
+import { MarketingOverviewPage } from "@/components/mq-orbit/marketing";
 
 export default function MarketingPage() {
-  return <BlankRoutePage title="Marketing" />;
+  return <MarketingOverviewPage />;
 }
